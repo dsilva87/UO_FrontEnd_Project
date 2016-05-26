@@ -1,0 +1,55 @@
+/*
+By Dino Silva
+May 25, 2016
+*/
+
+/* Mobile Layout
+************************************/
+.twelve.columns img {
+    width: 100%;
+    padding: 1em 0;
+}
+
+/* Mobile Landscape Orientation & Tablet Layout
+************************************/
+@media (min-width: 440px) {
+    .twelve.columns {
+        padding-left: .16em;
+    }
+    
+    .twelve.columns img{
+        width:43.4%;
+        float:left;    
+        padding: .85em;
+        padding-left: 1.14em;
+    }
+}
+
+/* Desktop Layout
+***********************************/
+@media (min-width: 769px) {
+    .twelve.columns {
+        padding-left: .16em;
+    }
+    
+    .twelve.columns img{
+        width:30.21%;
+        float:left;    
+        padding-left: .85em;
+        
+/*   Will ease in the box shadow of the image when hovered  */
+  -webkit-transition: all .5s ease;
+     -moz-transition: all .5s ease;
+       -o-transition: all .5s ease;
+      -ms-transition: all .5s ease;
+          transition: all .5s ease;
+    }
+
+/* Box shadow will appear when hovering over image */
+    .twelve.columns img:hover{
+        -moz-box-shadow: 0 0 10px #ccc;
+        -webkit-box-shadow: 0 0 10px #ccc;
+         box-shadow: 0 0 10px #ccc; 
+         cursor: pointer;
+    }
+}
