@@ -1,0 +1,1 @@
+Please commit the final project to your github account for us to review. It should include your .html file, .css file, and an image directory.
